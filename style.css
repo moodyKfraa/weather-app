@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #eee;
+}
+.main-container{
+    max-width: 500px;
+    min-width: 300px;
+    padding: 20px 10px;
+    border-radius: 30px;
+    background:linear-gradient(135deg , #cc2742 , #6d21a3);
+}
+.main-container .content .header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.main-container .content .header .location p{
+    color: rgb(255, 115, 0);
+    font-size: 20px;
+    margin: 0 0 10px  0;
+}
+.main-container .content .date{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.content .temp{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.content .temp .temp-degree{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.content .temp .temp-degree h1{
+    font-size: 60px;
+    position: relative;
+    margin: 0;
+}
+.content .temp-degree h1::after{
+    content: "";
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 5px solid #fff;
+}
+.content .temp-degree img{
+    width: 40%;
+}
+.content .temp .temp-state{
+    text-align: center;
+    font-size: 22px;
+    color: rgb(255, 115, 0);
+}
+hr{
+    width: 50%;
+    border-color: #eee;
+    margin-top: 20px;
+}
